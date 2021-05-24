@@ -1,0 +1,48 @@
+{% extends 'MyApp/main.html' %}
+
+{% block title %}
+<title>View Task</title>
+{% endblock %}
+
+{% block content %}
+{% include 'MyApp/navbar.html' %}
+<div id="TodoForm">
+    <form action="" class="form-horizontal">
+        <fieldset>
+            <div id="legend">
+                <legend class="">Your Task:</legend>
+            </div>
+            <div class="form-group">
+                <label for="task_name">Task Name:</label>
+                <input type="text" class="form-control" id="task_id" value="First Task" readonly>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea name="description" rows="5" cols="74" readonly>First Task description</textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" class="custom-select" name="category">
+                    <option selected>Choose...</option>
+                    <option value="Category 1" disabled>Category 1</option>
+                    <option value="Category 2" disabled>Category 2</option>
+                    <option value="Category 3" disabled>Category 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="task_date">Date (date and time):</label>
+                <input type="datetime-local" id="task_date" name="task_date" readonly>
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" class="custom-select" name="status">
+                    <option selected>Choose...</option>
+                    <option value="Status 1" disabled>IN PROGRESS</option>
+                    <option value="Status 2" disabled>SUCCEED</option>
+                    <option value="Status 3" disabled>MISSED</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+</div>
+{% endblock %}

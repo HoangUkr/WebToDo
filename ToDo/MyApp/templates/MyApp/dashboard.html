@@ -1,0 +1,42 @@
+{% extends 'MyApp/main.html' %}
+
+{% block title %}
+<title>Dashboard</title>
+{% endblock %}
+
+{% block content %}
+{% include 'MyApp/navbar.html' %}
+<div class="col">
+    <div class="row">
+        <div class="col-md">
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Task</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Detail</th>
+                            <th>Update</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="tasks">
+                        <tr>
+                            <td><input class="form-check-input" type="checkbox" value="" id="check_done"></td>
+                            <td>First Task</td>
+                            <td>19 May 2021</td>
+                            <td>SUCCEED</td>
+                            <td><a href="" class="btn btn-primary btn-info">View</a></td>
+                            <td><a href="" class="btn btn-primary btn-info">Update</a></td>
+                            <td><a href="" class="btn btn-primary btn-danger">Remove</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

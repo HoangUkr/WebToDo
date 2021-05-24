@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #17a2b8;
+    height: 100vh;
+}
+#login .container #login-row #login-column #login-box{
+    margin-top: 120px;
+    max-width: 600px;
+    height: 350px;
+    border: 1px solid #9c9c9c;
+    background-color: #eaeaea;
+}
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+}
+#registration{
+    margin: auto;
+    margin-top: 120px;
+    max-width: 600px;
+    height: 640px;
+    border: 1px solid #9c9c9c;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+.input-xlarge{
+    width: 100%;
+    padding: 12px, 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.input-xlarge:focus{
+    border: 3px solid #555;
+}
+#TodoForm{
+    margin: auto;
+    margin-top: 30px;
+    max-width: 600px;
+    height: 620px;
+    border: 1px solid #9c9c9c;
+    background-color: #eaeaea;
+    padding: 20px;
+}

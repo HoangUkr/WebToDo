@@ -1,0 +1,5 @@
+ToDo/db.sqlite3
+ToDo/MyApp/__pycache__/
+ToDo/ToDo/__pycache__/
+ToDo/MyApp/migrations/
+ToDo/ToDo/settings_dev.py
